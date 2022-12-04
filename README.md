@@ -7,12 +7,10 @@
     - https://python-poetry.org/docs/#installation
 - GNU Make
 
+## Solutions
 
-## Run
-
-`poetry run python main.py`
-
-For help: `poetry run python main.py -h`
+Run individual solutions:
+`poetry run python src/solutions/day1` etc.
 
 ## Test
 

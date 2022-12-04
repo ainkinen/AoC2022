@@ -100,8 +100,3 @@ def part2(input_path: str = INPUT_PATH) -> int:
     scores = map(_score_round, plays)
 
     return sum(scores)
-
-
-if __name__ == "__main__":
-    print(f"Part 1: {part1()}")
-    print(f"Part 2: {part2()}")

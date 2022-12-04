@@ -27,8 +27,3 @@ def part2(input_path: str = INPUT_PATH) -> int:
     sorted_sums = list(reversed(sorted(elf_sums)))
 
     return sum(sorted_sums[0:3])
-
-
-if __name__ == "__main__":
-    print(f"Part 1: {part1()}")
-    print(f"Part 2: {part2()}")
