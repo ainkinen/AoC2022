@@ -1,0 +1,17 @@
+# Intellij
+.idea/
+
+# Python
+__pycache__/
+*.so
+
+# pytest
+.pytest_cache/
+
+# envs
+.env
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json

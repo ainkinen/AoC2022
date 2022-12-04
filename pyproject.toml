@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "aoc2022"
+version = "0.1.0"
+description = "Advent of Code 2022"
+authors = ["None"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+pytest = "^7.2.0"
+pytest-asyncio = "^0.20.2"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --junitxml='.pytest_cache/junit-report.xml'"
+markers = [
+    "integration_test: A slow integration test suite", # An example marker
+]
+asyncio_mode = "auto" # All async tests and fixtures are considered asyncio driven https://github.com/pytest-dev/pytest-asyncio#modes
