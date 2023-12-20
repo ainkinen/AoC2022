@@ -7,4 +7,8 @@ def read_as_string(path: str | bytes | PathLike) -> str:
 
 
 def read_as_lines(path: str | bytes | PathLike) -> list[str]:
+    """
+
+    :rtype: object
+    """
     return read_as_string(path).splitlines()
